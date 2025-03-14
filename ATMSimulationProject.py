@@ -57,7 +57,7 @@ while atmStatus and cardStatus:
     elif userAction.lower() == "deposit money":
         while True:
             try:
-                balance = balance + int(input("Please enter the deposited amount: "))
+                balance = balance + float(input("Please enter the deposited amount: "))
                 break
             except ValueError:
                 print("Please enter a valid number")
@@ -66,7 +66,7 @@ while atmStatus and cardStatus:
     elif userAction.lower() == "withdraw money":
         while True:
             try:
-                withdrawalBalance = int(input("Please enter the amount to be withdrawn: "))
+                withdrawalBalance = float(input("Please enter the amount to be withdrawn: "))
                 break
             except ValueError:
                 print("Please Enter a valid number")
