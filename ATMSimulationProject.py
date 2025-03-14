@@ -51,10 +51,10 @@ while atmStatus and cardStatus:
     print("3. Withdraw money")
     print("4. Exit")
     userAction = input("Please enter your choice: ")
-    if userAction.lower() == "check balance":
+    if userAction.lower() == "check balance" or userAction.lower() == "1":
         print(balance)
         moreServiceChecker()
-    elif userAction.lower() == "deposit money":
+    elif userAction.lower() == "deposit money" or userAction.lower() == "2":
         while True:
             try:
                 balance = balance + float(input("Please enter the deposited amount: "))
@@ -63,7 +63,7 @@ while atmStatus and cardStatus:
                 print("Please enter a valid number")
         print(f"Your new balance is {balance}")
         moreServiceChecker()
-    elif userAction.lower() == "withdraw money":
+    elif userAction.lower() == "withdraw money" or userAction.lower() == "3":
         while True:
             try:
                 withdrawalBalance = float(input("Please enter the amount to be withdrawn: "))
@@ -76,7 +76,7 @@ while atmStatus and cardStatus:
         else:
             print("You don't have sufficient balance")
         moreServiceChecker()
-    elif userAction.lower() == "exit":
+    elif userAction.lower() == "exit" or userAction.lower() == "4":
         exitGreet()
         atmStatus = False
     else:
