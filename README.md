@@ -1,23 +1,48 @@
-This project is simulating the ATM behaviour, with the following objectives:
+# Interactive ATM Banking System
 
-1- The program asks for the name to be able to send a customized welcoming message "this shouldn't be applied in a real scenario"
+Welcome to the Interactive ATM Banking System! This program simulates basic banking functionalities, allowing users to check their balance, deposit money, withdraw cash, and exit with ease.
 
-2- The program checks if the PIN number is correct
+## Features
+- **Welcome Greeting**: A personalized greeting for each user.
+- **User Authentication**: Secure PIN-based authentication (three attempts before the card is blocked).
+- **Main Menu**:
+  - Check Balance
+  - Deposit Money
+  - Withdraw Money
+  - Exit
+- **Error Handling**:
+  - Prompts for valid numeric inputs.
+  - Handles insufficient balance and invalid options gracefully.
+- **Exit Greeting**: A polite farewell after banking tasks are completed.
 
-3- if the user entered incorrect PIN number 3 times, the card is banned
+## Requirements
+- Python 3.x installed on your system.
 
-4- if the user entered the correct PIN he should be able to enter the ATM software
+## How to Run
+1. Clone or download this script.
+2. Open a terminal or command prompt.
+3. Navigate to the script's directory.
+4. Run the script using:
+   ```
+   python atm_banking_system.py
+   ```
+5. Follow the on-screen instructions.
 
-5- The ATM software includes a menu with 4 components "check balance, deposit, withdraw, exit"
+## Sample Walkthrough
+1. **Step 1**: Enter your name.
+   - You'll be greeted with a personalized welcome message.
+2. **Step 2**: Enter your PIN.
+   - Correct PIN: Access the main menu.
+   - Incorrect PIN (3 attempts): Your card will be blocked.
+3. **Step 3**: Explore menu options:
+   - **Check Balance**: Displays current account balance.
+   - **Deposit Money**: Enter the deposit amount to update your balance.
+   - **Withdraw Money**: Specify an amount to withdraw, ensuring sufficient balance.
+   - **Exit**: Conclude the session with a thank-you message.
+4. **Step 4**: Interact further or exit based on your choices.
 
-6- if the user didn't choose the correct menu item, he will get a fallback response asking him to choose a valid menu item.
-
-7- once the user enters one of the menu items, he will be asked if he still wants to have another service.
-
-8- if the user still needs another service he will get back to the main menu.
-
-9- if not, the program will send send a goodbye message and exit
-
-10- the program allows the user to have many services during a single session
-
-11- the program was written in a way to handle all the exceptions.
+## Example Commands
+- To check balance, type **1** or "check balance".
+- For deposit money, type **2** or "deposit money".
+- To withdraw money, type **3** or "withdraw money".
+- To exit, type **4** or "exit".
